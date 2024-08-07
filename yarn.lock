@@ -29,6 +29,18 @@
     jsonpointer "^5.0.0"
     leven "^3.1.0"
 
+"@azure/msal-browser@^3.16.0":
+  version "3.16.0"
+  resolved "https://registry.yarnpkg.com/@azure/msal-browser/-/msal-browser-3.16.0.tgz#f1e2dc957006783b29816273d531761116215a33"
+  integrity sha512-WKobvIisBK7sFSOwHuchH9tUMekwhJRLgLE9tKhIq0wFYGRcVGK0KivP5vZrobVZEMNCZWto0fI1VcSVoa+cig==
+  dependencies:
+    "@azure/msal-common" "14.11.0"
+
+"@azure/msal-common@14.11.0":
+  version "14.11.0"
+  resolved "https://registry.yarnpkg.com/@azure/msal-common/-/msal-common-14.11.0.tgz#a34483ae6b1009d0058472f2c5db4569071dc51a"
+  integrity sha512-B6+IKLFs7Lsr06vjX8dPN61ENpTgiFrHf+CVo1UasHcmk5uEOq5D4thrbjsauKX+xtFryYsCDtznVDmWS4/sCg==
+
 "@babel/code-frame@^7.0.0", "@babel/code-frame@^7.10.4", "@babel/code-frame@^7.12.13", "@babel/code-frame@^7.16.0", "@babel/code-frame@^7.24.6", "@babel/code-frame@^7.8.3":
   version "7.24.6"
   resolved "https://registry.yarnpkg.com/@babel/code-frame/-/code-frame-7.24.6.tgz#ab88da19344445c3d8889af2216606d3329f3ef2"

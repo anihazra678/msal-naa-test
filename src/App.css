@@ -1,38 +1,35 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center; /* Center items horizontally */
+  justify-content: center; /* Center items vertically */
+  padding: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.button-container {
+  display: flex;
+  flex-direction: column; /* Stack buttons vertically */
+  align-items: center; /* Center buttons horizontally */
+  gap: 10px; /* Space between buttons */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button {
+  padding: 10px 20px; /* Padding inside buttons */
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff; /* Button background color */
+  color: white; /* Button text color */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 16px;
+  width: 100%; /* Ensure buttons stretch to container width if needed */
+  max-width: 200px; /* Optional: Set a max-width to prevent too wide buttons */
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker background on hover */
+}
+
+button:disabled {
+  background-color: #6c757d; /* Disabled button color */
+  cursor: not-allowed;
 }
