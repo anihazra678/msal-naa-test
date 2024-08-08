@@ -2,8 +2,8 @@ import {
   AccountInfo,
   IPublicClientApplication,
   PopupRequest,
-  PublicClientNext,
   SilentRequest,
+  createNestablePublicClientApplication,
 } from "@azure/msal-browser";
 import React, { useState } from "react";
 import "./App.css";
@@ -27,9 +27,7 @@ const App: React.FC = () => {
 
   React.useEffect(() => {
     const initializeMsal = async () => {
-      const _pca = await PublicClientNext.createPublicClientApplication(
-        msalConfig
-      );
+      const _pca = await createNestablePublicClientApplication(msalConfig);
       setPca(_pca);
       await pca?.initialize();
       const accounts = pca?.getAllAccounts();
