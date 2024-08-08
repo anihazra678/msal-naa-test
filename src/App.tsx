@@ -39,7 +39,7 @@ const App: React.FC = () => {
         setHeader(`Welcome, ${accounts?.[0].name}! to MSAL Authentication App`);
       }
     };
-    initializeMsal();
+    !pca && initializeMsal();
   }, [pca]);
 
   React.useEffect(() => {
