@@ -14,6 +14,7 @@ import msalConfig from "./msalConfig";
 declare global {
   interface Window {
     nestedAppAuthBridge: object;
+    isAlertShown: boolean;
   }
 }
 
@@ -42,12 +43,15 @@ const App: React.FC = () => {
   }, [pca]);
 
   React.useEffect(() => {
-    if (window.nestedAppAuthBridge) {
-      alert("Nested app auth bridge is available");
-    } else {
-      alert("Nested app auth bridge is not available");
+    if (!window.isAlertShown) {
+      if (window.nestedAppAuthBridge) {
+        alert("Nested app auth bridge is available");
+      } else {
+        alert("Nested app auth bridge is not available");
+      }
+      window.isAlertShown = true;
     }
-  });
+  }, []);
 
   const login = async () => {
     console.log("Logging in...");
