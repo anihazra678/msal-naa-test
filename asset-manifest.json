@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/msal-naa-test/static/css/main.d851b24a.css",
-    "main.js": "/msal-naa-test/static/js/main.f88a55bf.js",
+    "main.js": "/msal-naa-test/static/js/main.a4ae862a.js",
     "static/js/453.8d492bab.chunk.js": "/msal-naa-test/static/js/453.8d492bab.chunk.js",
     "index.html": "/msal-naa-test/index.html",
     "main.d851b24a.css.map": "/msal-naa-test/static/css/main.d851b24a.css.map",
-    "main.f88a55bf.js.map": "/msal-naa-test/static/js/main.f88a55bf.js.map",
+    "main.a4ae862a.js.map": "/msal-naa-test/static/js/main.a4ae862a.js.map",
     "453.8d492bab.chunk.js.map": "/msal-naa-test/static/js/453.8d492bab.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d851b24a.css",
-    "static/js/main.f88a55bf.js"
+    "static/js/main.a4ae862a.js"
   ]
 }
